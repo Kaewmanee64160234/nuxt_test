@@ -19,6 +19,13 @@ modules: ['@nuxt/fonts', '@nuxt/eslint', (_options, nuxt) => {
         transformAssetUrls,
       },
     },
+    // hot reload
+    server: {
+      watch: {
+        usePolling: true,
+        interval: 1000,
+      },
+    },
   },
   srcDir: './src',
 })
