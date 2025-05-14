@@ -20,6 +20,9 @@ const hello2 = 'hello'
     </v-row>
   </v-container>
 </template>
-<style >
+<style scoped>
 
+body {
+  font-family: 'Sarabun', sans-serif;
+}
 </style>

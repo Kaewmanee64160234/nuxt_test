@@ -27,6 +27,26 @@ modules: ['@nuxt/fonts', '@nuxt/eslint', (_options, nuxt) => {
       },
     },
   },
+fonts: {
+    families: [
+      { name: "THSarabunPSK", provider: "custom" },
+      { name: "Kanit", provider: "custom" },
+      { name: "Noto Sans Thai", provider: "google" },
+      { name: "Sarabun", provider: "google" },
+      { name: "Roboto", provider: "google" }
+    ],
+
+    defaults: {
+      fallbacks: {
+        "sans-serif": ["Roboto", "THSarabunPSK", "Noto Sans Thai", "Sarabun"],
+        serif: ["Roboto", "THSarabunPSK", "Noto Sans Thai", "Sarabun"],
+        monospace: ["Roboto", "THSarabunPSK", "Noto Sans Thai", "Sarabun"],
+      },
+      preload: true,
+    }
+  },
+
+
 
   srcDir: './src',
    ssr: false,
