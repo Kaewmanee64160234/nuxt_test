@@ -1,6 +1,17 @@
 // @ts-check
 import withNuxt from './.nuxt/eslint.config.mjs'
 
-export default withNuxt(
+export default withNuxt({
+  rules: {
 
-)
+    'semi': ['error', 'always'],
+    'quotes': ['error', 'double'],
+
+  },
+
+  files: [
+    '**/*.vue'
+    , '**/*.ts'
+
+  ]
+})

@@ -1,4 +1,6 @@
 <script setup lang="ts" >
+const hello = ''
+const hello2 = 'hello'
 
 </script>
 <template>
@@ -19,5 +21,5 @@
   </v-container>
 </template>
 <style >
-    
+
 </style>
